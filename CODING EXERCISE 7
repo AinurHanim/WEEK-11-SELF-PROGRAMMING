@@ -1,0 +1,22 @@
+package MyMethod;
+import java.util.Scanner;
+public class AverageThreeNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Input the first number : ");
+		int a = scan.nextInt();
+		System.out.println("Input the second number : ");
+		int b = scan.nextInt();
+		System.out.println("Input the third number : ");
+		int c = scan.nextInt();
+		System.out.println("The average value is " + avgNum(a, b, c));
+		
+	}
+	public static int avgNum(int a, int b, int c)
+	{
+		return(a+b+c)/3;
+	}
+
+}
