@@ -1,0 +1,31 @@
+package MyMethod;
+import java.util.Scanner;
+public class DisplayMiddleCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Input a number : ");
+		String a = scan.next();
+		System.out.println("The middle character in the string : " + middle(a) );
+		
+	}
+	public static String middle(String a)
+	{
+		int position;
+		int length;
+		if(a.length() % 2==0)
+		{
+			position = a.length() / 2-1;
+			length = 2;
+		}
+		else
+		{
+			position = a.length() /2;
+			length = 1;
+			
+		}
+		return a.substring(position, position + length);
+	}
+
+}
