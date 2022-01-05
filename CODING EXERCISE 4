@@ -1,0 +1,21 @@
+package MyMethod;
+import java.util.Scanner;
+public class NoteSlide27 {
+
+	public static void printSquare(double x)
+	{
+		System.out.println(x*x);
+	}
+	public static void printSquare(String y)
+	{
+		System.out.println("hello");
+	}
+	
+	public static void main(String[] arguments)
+	{
+		printSquare("hello");
+		printSquare(5.5);
+	}
+
+
+}
